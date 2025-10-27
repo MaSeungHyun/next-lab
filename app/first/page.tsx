@@ -15,7 +15,7 @@ export default function Page() {
   };
   return (
     <>
-      <h2>First Page</h2>
+      <h2 className="text-white font-bold">First Page</h2>
       <Button onClick={handleClick}>Second Page</Button>
       <Button onClick={handleClickBack}>Back</Button>
     </>

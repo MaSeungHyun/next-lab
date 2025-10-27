@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <>
-      <h2>Home</h2>
+      <h2 className="text-white font-bold">Home</h2>
       <Button onClick={() => router.push("/first")}>First Page</Button>
       <Button onClick={() => router.push("/second")}>Second Page</Button>
     </>
