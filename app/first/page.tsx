@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <>
       <h2 className="text-white font-bold">First Page</h2>
-      <p>{cookie && cookie}</p>
+      <p className="text-amber-600">{cookie && `🍪 ${cookie}`}</p>
       <Button onClick={handleClick}>Second Page</Button>
       <Button onClick={handleClickGetCookie}>Get Cookie</Button>
       <Button onClick={handleClickBack}>Back</Button>
