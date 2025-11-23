@@ -5,11 +5,16 @@ import Button from "./components/Button";
 export default function Home() {
   const router = useRouter();
 
+  const handleSaveCookie = () => {
+    document.cookie = "name=John; path=/";
+  };
+
   return (
     <>
       <h2 className="text-white font-bold">Home</h2>
       <Button onClick={() => router.push("/first")}>First Page</Button>
       <Button onClick={() => router.push("/second")}>Second Page</Button>
+      <Button onClick={handleSaveCookie}>Save Cookie</Button>
     </>
   );
 }
